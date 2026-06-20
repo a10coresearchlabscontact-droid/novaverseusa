@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -29,7 +30,7 @@ body{
     align-items:center;
 }
 
-/* DESKTOP */
+/* DESKTOP IMAGE */
 
 .desktop-image{
     display:block;
@@ -38,7 +39,7 @@ body{
     object-fit:contain;
 }
 
-/* MOBILE */
+/* MOBILE IMAGE */
 
 .mobile-image{
     display:none;
@@ -47,9 +48,9 @@ body{
     object-fit:contain;
 }
 
-/* RESPONSIVE */
+/* MOBILE DEVICES */
 
-@media (max-width:768px){
+@media screen and (max-width:768px){
 
     .desktop-image{
         display:none;
@@ -68,14 +69,14 @@ body{
 <body>
 
 <img
-class="desktop-image"
-src="NOVAVERSE_APP_HERO_BACKGROUND_V02_COMING_SOON.png"
-alt="NovaVerse USA Desktop">
+    class="desktop-image"
+    src="desktop.png"
+    alt="NovaVerse USA Desktop">
 
 <img
-class="mobile-image"
-src="NOVAVERSE_MOBILE_V01.PNG"
-alt="NovaVerse USA Mobile">
+    class="mobile-image"
+    src="mobile.png"
+    alt="NovaVerse USA Mobile">
 
 </body>
 
