@@ -1,83 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>NovaVerse USA</title>
 
 <style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html,
-body{
-    width:100%;
-    height:100%;
-    background:#000;
-    overflow:hidden;
+html, body {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  overflow: hidden;
 }
 
-body{
-    display:flex;
-    justify-content:center;
-    align-items:center;
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* DESKTOP IMAGE */
-
-.desktop-image{
-    display:block;
-    width:100vw;
-    height:100vh;
-    object-fit:contain;
+img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+  display: block;
 }
 
-/* MOBILE IMAGE */
-
-.mobile-image{
-    display:none;
-    width:100vw;
-    height:100vh;
-    object-fit:contain;
+.mobile {
+  display: none;
 }
 
-/* MOBILE DEVICES */
+@media screen and (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
 
-@media screen and (max-width:768px){
-
-    .desktop-image{
-        display:none;
-    }
-
-    .mobile-image{
-        display:block;
-    }
-
+  .mobile {
+    display: block;
+  }
 }
-
 </style>
-
 </head>
 
 <body>
 
-<img
-    class="desktop-image"
-    src="desktop.png"
-    alt="NovaVerse USA Desktop">
-
-<img
-    class="mobile-image"
-    src="mobile.png"
-    alt="NovaVerse USA Mobile">
+<img class="desktop" src="desktop.png" alt="NovaVerse USA">
+<img class="mobile" src="mobile.png" alt="NovaVerse USA Mobile">
 
 </body>
-
 </html>
